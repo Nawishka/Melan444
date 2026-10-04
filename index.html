@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5eee7">
+  <meta name="description" content="A little world, made just for Shashi. With love, Melan.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>A little world for Shashi ♡</title>
+  <link rel="icon" href="assets/icons/heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="masthead"><a class="monogram" href="./" aria-label="Restart our little story">m <span>♡</span> s</a><span class="dedication">a little world, just for you</span><button id="sound" class="quiet" hidden aria-pressed="false">Sound off ♫</button></header>
+  <main id="story">
+    <section class="scene opening" id="opening" aria-labelledby="opening-title">
+      <div class="eyebrow">SOMEWHERE BETWEEN A WISH & A DREAM</div>
+      <h1 id="opening-title" tabindex="-1">Hi, Shashi <span class="title-heart">♡</span></h1>
+      <p id="opening-subtitle">I made a tiny little world for you…</p>
+      <div class="illustration opening-art" data-couple="garden" aria-hidden="true"></div>
+      <button class="primary breathe" data-next="intro">Come with me <span>✧</span></button>
+      <span class="small-note">no rush. this moment is ours.</span>
+    </section>
+    <section class="scene" id="intro" hidden aria-labelledby="intro-title">
+      <div class="eyebrow">A LITTLE SOMETHING</div><h2 id="intro-title" tabindex="-1">You. Me.<br>A little bit of magic.</h2>
+      <p>I brought something for you.<br>Well… almost.</p><div class="illustration curious" data-couple="garden" aria-hidden="true"></div>
+      <button class="primary" data-next="flowers">Give me a hand? <span>↗</span></button>
+    </section>
+    <section class="scene" id="flowers" hidden aria-labelledby="flowers-title">
+      <div class="eyebrow">A HANDFUL OF HAPPY</div><h2 id="flowers-title" tabindex="-1">Pick a few for her.</h2><p id="flower-note">The prettiest ones are the ones you choose.</p>
+      <div id="flower-garden" class="flower-garden" aria-label="Flowers to collect"></div>
+      <div class="illustration gifting" data-couple="garden" aria-hidden="true"></div><div id="bouquet" aria-hidden="true"></div>
+      <p class="interaction-note" id="flower-status" role="status">Tap each little flower to gather it.</p>
+    </section>
+    <section class="scene night" id="stars" hidden aria-labelledby="stars-title">
+      <div class="eyebrow">A SKY OF OUR OWN</div><h2 id="stars-title" tabindex="-1">Even the stars<br>look better with you.</h2><p>Shall we turn a few on?</p>
+      <div class="constellation" id="constellation"><svg viewBox="0 0 320 210" aria-hidden="true"><path id="star-line" d="M160 185 C105 148 15 90 63 45 C99 12 140 34 160 61 C180 34 221 12 257 45 C305 90 215 148 160 185"/></svg><div id="star-buttons"></div></div>
+      <div class="illustration small-couple" data-couple="night" aria-hidden="true"></div><p id="star-status" class="interaction-note" role="status">Tap the stars. Make a little wish.</p>
+    </section>
+    <section class="scene choice" id="choice" hidden aria-labelledby="choice-title">
+      <div class="eyebrow">ONE VERY IMPORTANT QUESTION</div><h2 id="choice-title" tabindex="-1">Green light or<br>Red light? <span class="smile">😁</span></h2>
+      <p>So… where do we go from here?</p><div class="illustration choice-art" data-couple="garden" aria-hidden="true"></div>
+      <button class="primary green" id="green">🟢 Green Light</button>
+      <p id="red-reaction" class="reaction" role="status" aria-live="polite">A very difficult decision. Obviously.</p>
+      <div id="red-arena"><button id="red" class="red" aria-describedby="red-help">🔴 Red Light</button></div>
+      <span id="red-help" class="sr-only">This is a playful escaping button. Choose Green Light to continue, or leave whenever you like.</span>
+      <div id="easter-egg" hidden aria-hidden="true"><span>Wrong one 😂</span><b>↖</b></div>
+    </section>
+    <section class="scene success" id="success" hidden aria-labelledby="success-title"><div class="eyebrow">AND JUST LIKE THAT</div><h2 id="success-title" tabindex="-1">Green light it is… ❤️</h2><p>My favourite kind of yes.</p><div class="illustration together" data-couple="garden" aria-hidden="true"></div><div class="success-hearts" aria-hidden="true">♡ <span>✧</span> ♡</div></section>
+    <section class="scene suspense" id="suspense" hidden aria-labelledby="suspense-title"><span class="tiny-star" aria-hidden="true">✧</span><h2 id="suspense-title" tabindex="-1">Okay…</h2><p id="suspense-line">I actually brought you here<br>for something else.</p></section>
+    <section class="scene special" id="special" hidden aria-labelledby="special-title"><div class="eyebrow">SOMETHING I'VE BEEN MEANING TO SAY</div><h2 id="special-title" tabindex="-1">A little closer.<br>A little quieter.</h2><p>Just one last thing.</p><button class="primary final-cta breathe" id="reveal">There's something I want you to see ♡</button><span class="tiny-star" aria-hidden="true">✧</span></section>
+    <section class="scene pause" id="pause" hidden aria-labelledby="pause-title"><div class="illustration together" data-couple="night" aria-hidden="true"></div><h2 id="pause-title" tabindex="-1">This part is just<br>from me to you.</h2></section>
+    <section class="scene letter-scene" id="letter" hidden aria-labelledby="letter-title"><article class="letter"><span class="eyebrow">FOR YOU, ALWAYS</span><h2 id="letter-title" tabindex="-1">My dear Shashi,</h2><div id="letter-body"></div><div class="signature">With love,<br><span id="signature">Melan</span><span aria-hidden="true"> ♡</span></div></article><button class="text-button" data-next="ending">Stay here a little longer <span>→</span></button></section>
+    <section class="scene night ending" id="ending" hidden aria-labelledby="ending-title"><div class="eyebrow">MY FAVOURITE PLACE IS BESIDE YOU</div><div class="illustration seated" data-couple="seated" aria-hidden="true"></div><h2 id="ending-title" tabindex="-1">And that's all…<br>for now. <span>♡</span></h2><p>A little world. A whole lot of you.</p><button class="text-button" id="replay">Replay our little story ↻</button></section>
+  </main>
+  <footer><span id="footer-love">MADE WITH LOVE, BY MELAN</span><div class="chapter-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i></div><span class="footer-heart" aria-hidden="true">♡</span></footer>
+  <div id="sparkles" aria-hidden="true"></div>
+  <noscript><div class="noscript">This little story needs JavaScript. Please enable it in your browser, then refresh. ♡</div></noscript>
+</body>
+</html>
